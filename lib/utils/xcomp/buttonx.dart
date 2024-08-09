@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:jml_flutter_xcomponents/utils/xcomp/tex.dart';
 
 Widget Buttonx(
   String txt, {
