@@ -6,7 +6,8 @@ Widget Tex(String st,
     String? fstyl,
     bool upper = false,
     String? fw,
-    String? align}) {
+    String? align,
+    String? ff}) {
   var fstyl_;
   var fw_;
   var align_;
@@ -45,6 +46,10 @@ Widget Tex(String st,
     textAlign: align_,
     overflow: TextOverflow.visible,
     style: TextStyle(
-        color: c, fontWeight: fw_, fontSize: fs?.toDouble(), fontStyle: fstyl_),
+        color: c,
+        fontWeight: fw_,
+        fontSize: fs?.toDouble(),
+        fontStyle: fstyl_,
+        fontFamily: ff),
   );
 }
