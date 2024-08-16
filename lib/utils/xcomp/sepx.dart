@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-Widget sepx({
+Widget sepX({
   double? h = 1,
   double? w,
 }) {

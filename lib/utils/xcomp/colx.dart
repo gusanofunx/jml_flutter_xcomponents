@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 
-Widget Colx(List<Widget> children,
+Widget colX(List<Widget> children,
     {String? align, String? justi, String? alt}) {
-  var aling_;
-  var justi_;
+  MainAxisAlignment aling_;
+  CrossAxisAlignment justi_;
   switch (align) {
     case "end":
       aling_ = MainAxisAlignment.end;
@@ -34,8 +34,8 @@ Widget Colx(List<Widget> children,
   }
   return Column(
     mainAxisSize: altx,
-    children: children,
     mainAxisAlignment: aling_,
     crossAxisAlignment: justi_,
+    children: children,
   );
 }

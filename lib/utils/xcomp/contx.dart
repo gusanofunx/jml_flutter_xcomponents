@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-Widget Contx(Widget child,
+Widget contX(Widget child,
     {Color? bc,
     int? pad = 0,
     int? px = 0,

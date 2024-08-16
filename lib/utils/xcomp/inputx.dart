@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Widget Inputx({
+Widget inputX({
   TextEditingController? ctr,
   String? place,
   int? maxlines,

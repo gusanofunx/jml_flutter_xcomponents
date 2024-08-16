@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 
-Widget Rowx(List<Widget> children, {String? align, String? justi}) {
-  var aling_;
-  var justi_;
-  switch (align) {
+Widget rowX(List<Widget> children, {String? align, String? justi}) {
+  MainAxisAlignment aling_;
+  CrossAxisAlignment justi_;
+  switch (justi) {
     case "end":
       aling_ = MainAxisAlignment.end;
       break;
@@ -16,7 +16,7 @@ Widget Rowx(List<Widget> children, {String? align, String? justi}) {
     default:
       aling_ = MainAxisAlignment.start;
   }
-  switch (justi) {
+  switch (align) {
     case "end":
       justi_ = CrossAxisAlignment.end;
       break;
@@ -28,8 +28,8 @@ Widget Rowx(List<Widget> children, {String? align, String? justi}) {
   }
 
   return Row(
-    children: children,
     mainAxisAlignment: aling_,
     crossAxisAlignment: justi_,
+    children: children,
   );
 }

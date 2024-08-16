@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 
-Widget Gradx(List<Color> colors, {bool? horizontal}) {
+Widget gradX(List<Color> colors, {bool? horizontal}) {
   return Container(
     decoration: BoxDecoration(
         gradient: LinearGradient(

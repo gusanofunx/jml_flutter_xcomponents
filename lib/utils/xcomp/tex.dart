@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-Widget Tex(String st,
+Widget tex(String st,
     {c,
     int? fs,
     String? fstyl,
@@ -8,9 +8,9 @@ Widget Tex(String st,
     String? fw,
     String? align,
     String? ff}) {
-  var fstyl_;
-  var fw_;
-  var align_;
+  FontStyle? fstyl_;
+  FontWeight fw_;
+  TextAlign align_;
   switch (align) {
     case 'end':
       align_ = TextAlign.end;
@@ -34,8 +34,8 @@ Widget Tex(String st,
       fw_ = FontWeight.bold;
 
       break;
-    case "bwold":
-      fw_ = FontWeight.w500;
+    case "mid":
+      fw_ = FontWeight.w600;
 
       break;
     default:

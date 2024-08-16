@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Widget Buttonx(
+Widget btnX(
   String txt, {
   Color? c,
   Color? tc,
